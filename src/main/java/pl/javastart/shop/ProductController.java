@@ -1,5 +1,6 @@
 package pl.javastart.shop;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -39,5 +40,10 @@ public class ProductController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/example")
+    @ResponseStatus(HttpStatus.CREATED)
+    void example() {
+
+    }
 
 }
