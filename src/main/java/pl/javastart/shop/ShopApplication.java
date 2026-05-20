@@ -10,4 +10,10 @@ public class ShopApplication {
         SpringApplication.run(ShopApplication.class, args);
     }
 
+
+    // GET /products
+    // GET /products/1
+    // GET /products/1/producer/contact
+    // POST /products
+    // GET /products?orderBy=name,desc
 }
